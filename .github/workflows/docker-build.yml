@@ -35,5 +35,4 @@ jobs:
           push: true
           tags: |
             etzion/centos-apache-php51:latest
-            etzion/centos-apache-php51:${{ needs.check-alpine.outputs.version }}
 
