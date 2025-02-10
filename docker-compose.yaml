@@ -1,0 +1,8 @@
+services:
+  httpd:
+    image: etzion/centos-apache-php51:latest
+    restart: unless-stopped
+    volumes:
+      ./html:/var/www/html
+    ports:
+      8080:80
