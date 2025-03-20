@@ -18,6 +18,7 @@ This repository contains Docker configuration for a legacy web server environmen
   - php-pdo
   - Various PEAR modules
   - Full list available in Dockerfile
+- Cron: vixie-cron
 
 ## Container Configuration
 

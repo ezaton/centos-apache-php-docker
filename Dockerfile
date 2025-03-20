@@ -10,6 +10,8 @@ RUN yum update -y && \
      php-imap php-readline php-ldap php-xmlrpc php-ncurses php-pear-Net-Socket php-pear-Net-SMTP \
      php-pear-Mail php-pecl-memcache php-pear-MDB2 php-pear-Date php-pear-Log php-gd \
      php-pear-Mail-Mime php-snmp
+# Add cron
+RUN yum install -y vixie-cron
 
 # Custom config, with ErrorLog and CustomLog directed at stderr and stdout
 COPY httpd.conf /etc/httpd/conf/
